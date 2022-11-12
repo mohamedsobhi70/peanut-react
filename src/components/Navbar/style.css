@@ -6,10 +6,6 @@ header nav .navbar-nav {
   margin-left: 80px;
 }
 
-header nav .nav-item.active .nav-link {
-  color: #f7ab4b;
-}
-
 header nav .nav-link {
   color: #364456;
   -webkit-transition: 0.3s ease-in-out;
@@ -24,12 +20,17 @@ header nav .nav-link svg path {
   fill: #364456;
 }
 
-header nav .nav-link:hover {
+header nav .nav-link:hover,
+header nav .nav-item .nav-link.active {
   color: #f7ab4b;
 }
 
 header nav .nav-link:hover svg path {
   fill: #f7ab4b;
+}
+
+.cart-num{
+  left: 100%;
 }
 
 footer .nav-link {

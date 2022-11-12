@@ -1,11 +1,11 @@
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <header className="mt-2">
       <div className="container">
         <nav className="navbar navbar-expand-lg bg-white shadow-main border-20 px-5">
-          <Link className="navbar-brand" to="/" aria-label="brandname">
+          <NavLink className="navbar-brand" to="/" aria-label="brandname">
             <svg
               width="148"
               height="46"
@@ -155,7 +155,7 @@ function Navbar() {
                 fill="black"
               />
             </svg>
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler d-lg-none"
             type="button"
@@ -169,37 +169,37 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav me-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
-                <Link className="nav-link " to="/">
+              <li className="nav-item">
+                <NavLink className="nav-link " to="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/bundles">
+                <NavLink className="nav-link" to="/bundles">
                   Bundles
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/items">
+                <NavLink className="nav-link" to="/items">
                   Items
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/tickets">
+                <NavLink className="nav-link" to="/tickets">
                   Tickets
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/draws">
+                <NavLink className="nav-link" to="/draws">
                   Draws
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <div className="d-md-flex align-items-center">
               <div className="account-section d-flex">
                 <Link
                   to="/signin"
-                  className="text-decoration-none nav-link ps-0 ps-md-2 active"
+                  className="text-decoration-none nav-link ps-0 ps-md-2 "
                 >
                   <span className="user-icon">
                     <svg
